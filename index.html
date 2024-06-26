@@ -14,17 +14,13 @@
 
 
 <script>
-    var n1 = Number(prompt("enter your start number : "))
-    var n2 = Number(prompt("enter yout end number : "))
-    if (n1 % 2 === 0) {
-        n1 = n1
-    } else {
-        n1++
+    var n1 = 0
+    var sum = 0
+    while (n1 != -1) {
+        n1 = Number(prompt("enter your number : "))
+        sum += n1
     }
-    while (n1 < n2) {
-        console.log(n1)
-        n1 += 2
-    }
+    alert(sum)
 </script>
 
 </html>
