@@ -14,15 +14,17 @@
 
 
 <script>
-    var n = Number(prompt("enter your number"))
-    var sum = 0
-    counter = 0
-    while (n / 10 != 0) {
-        sum = sum + (n % 10)
-        n = Math.floor(n / 10)
-        counter++
+    var n1 = Number(prompt("enter your start number : "))
+    var n2 = Number(prompt("enter yout end number : "))
+    if (n1 % 2 === 0) {
+        n1 = n1
+    } else {
+        n1++
     }
-    alert(sum + '\n' + counter)
+    while (n1 < n2) {
+        console.log(n1)
+        n1 += 2
+    }
 </script>
 
 </html>
