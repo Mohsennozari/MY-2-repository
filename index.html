@@ -14,13 +14,19 @@
 
 
 <script>
-    var n1 = 0
+    var nummbers = []
+    Var usernumber = 0
     var sum = 0
-    while (n1 != -1) {
-        n1 = Number(prompt("enter your number : "))
-        sum += n1
+    while (usernumber != -1) {
+        usernumber = Number(prompt("enter your number alvays your added -1 stop for get number "))
+        if (usernumber != -1) {
+            usernumber.push(usernumber)
+        }
     }
-    alert(sum)
+    for (i = 0; i < usernumber.length; i++) {
+        sum = usernumber[i] + sum
+    }
+    alert(sum / usernumber.length)
 </script>
 
 </html>
